@@ -29,10 +29,6 @@ body {
 	margin: 0px 15px 0px 0px;
 }
 
-#content {
-	padding: 20px;
-}
-
 #header ul a{
 	color: #FFFFFF;
 	text-decoration: none;
@@ -40,6 +36,10 @@ body {
 
 #header ul a:hover{
 	color: #cccccc;
+}
+
+#content {
+	padding: 20px;
 }
 
 .tow-colums img, .tow-colums p {
