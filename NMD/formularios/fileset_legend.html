@@ -1,0 +1,64 @@
+<form>
+  <fieldset>
+    <legend>Raza del personaje</legend>
+    <p>
+      <input type="radio" name="raza" id="raza_1" value="humano" />
+      <label for="raza_1">Humano</label>
+    </p>
+    <p>
+      <input type="radio" name="raza" id="raza_2" value="elfo" />
+      <label for="raza_2">Elfo</label>
+    </p>
+    <p>
+      <input type="radio" name="raza" id="raza_3" value="enano" />
+      <label for="raza_3">Enano</label>
+    </p>
+  </fieldset>
+</form>
+
+<form>
+	<fieldset>
+		<legend>Check boxes</legend>
+		<p>
+		  <input type="checkbox" id="id-escudo" name="escudo" value="1">
+		  <label for="id-escudo"> Escudo </label>
+		</p>
+		<p>
+		  <label for="id-espada">
+		    <input type="checkbox" id="id-espada" name="espada" value="1"> Espada
+		  </label>
+		</p>
+	</fieldset>
+  
+</form>
+
+<form method="POST" action="#">
+<fieldset>
+	<legend> &lt;lable&gt; anidado</legend>
+
+  <p>Campos obligatorios son seguidos por <strong><abbr title="obligatorio">*</abbr></strong>.</p>
+
+  <!-- cuando el control se encuentra anidado en la etiqueta, no es necesario el uso del atributo 'for' en el <label>. -->
+  <!-- Así que: -->
+  <label>
+    <span>Nombre: </span>
+    <input type="text" name="nombreusuario" required />
+    <strong><abbr title="obligatorio">*</abbr></strong>
+  </label>  
+
+  <!-- sería lo mismo escribir: -->  
+  <div>
+    <label for="usuario">Nombre: </label>
+    <input id="usuario" type="text" name="nombreusuario" required />
+    <strong><abbr title="obligatorio">*</abbr></strong>
+  </div>
+
+  <p>
+    <label for="idnacimiento"> <!-- Entonces, el atributo 'for' es redundante. -->
+      <span>Fecha de nacimiento: </span>
+      <input type="text" id="idnacimiento" name="nacimiento" maxlength="10" /><em> formateada como dd/mm/yyyy </em>
+    </label>
+  </p>
+  <button type="submit">enviar</button>
+  </fieldset>
+</form>
