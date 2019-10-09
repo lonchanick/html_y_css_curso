@@ -1,30 +1,41 @@
 <form>
-  <p>
-    <label for="text_1">With regular HTML</label><br>
-    <textarea id="text_1" name="regular"><p>I'm a paragraphe</p></textarea>
-  </p>
-  <p>
-    <label for="text_2">With escaped HTML</label><br>
-    <textarea id="text_2" name="escaped">&lt;p&gt;I'm a paragraphe&lt;/p&gt;</textarea>
-  </p>
-  <p>
-    <button>Send me</button>
-  </p>
+  <div>
+    <label for="options">Conjunto de opciones</label>
+    <select id="options">
+      <option>op_1</option>
+      <option>op_2</option>
+      <option selected="true">op_3</option>
+      <optgroup label="sub_optiongrp">
+        <option>optg_1</option>
+        <option>optg_2</option>
+        <option>optg_3</option>
+      </optgroup>
+    </select>
+  </div>
 </form>
 
 <form>
+  <label>
+    input one
+    <input type="text" name="input_one" value="default_1">
+  </label><br>
+
+  <label>
+    input one
+    <input type="text" name="input_one" value="default_2">
+  </label><br>
+
+  <label>
+    input one
+    <input type="text" name="input_one" value="default_3">
+  </label><br>
+  <button type="reset">Reset</button>
+</form>
+
+<p>aria-labelledby</p>
+<form>
+  <p id="fruitLabel">What's your favorite fruit</p>
   <p>
-    <label for="myFruit">Pick a fruit</label>
-    <select id="myFruit" name="fruit">
-      <!-- There is a trick here you think you'll pick
-         a banana but you'll eat an orange >:-) -->
-      <option value="orange">Banana</option>
-      <option>Cherry</option>
-      <optgroup label="berries">
-        <option>Blueberry</option>
-        <option>Raspberry</option>
-        <option>Strawberry</option>
-      </optgroup>
-    </select>
+    <input type="text" name="fruit" aria-labelledby="fruitLabel">
   </p>
 </form>
