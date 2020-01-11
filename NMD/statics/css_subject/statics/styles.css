@@ -1,0 +1,53 @@
+h1{
+	font-size: 2em;
+	color: green;
+}
+h1+p{
+	font-size: 200%;
+}
+p,li{
+	color: green;
+}
+
+li{
+	list-style-type: none;/*square;*/
+}
+
+li.special, 
+span.special
+{
+	color: orange;
+	font-weight: bold;
+}
+/* 
+.special{
+	color: orange;
+	font-weight: bold;
+}
+*/
+
+li em{
+	color: rebeccapurple;
+	font-weight: bold;
+}
+
+a:link{
+	color: pink;
+}
+
+a:visited{
+ 	color: red;
+ }
+
+a:hover{
+	text-decoration: none; 
+}
+
+a{
+	text-decoration: none; /*se supone que elimine el subrayado del link*/
+}
+
+
+body{
+	font-family: Ubuntu;
+}
